@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Armstrong number is of  3digit, the sum of cube of each number is equal to that number itself. -->
+    <script>
+var number=prompt("enter a num");
+var temp= number;
+var sum = 0;
+var noOfDigit = number.toString().length;
+alert(noOfDigit);
+while(temp>0){
+    var digit = temp % 10;
+    sum += digit**3;
+    temp = parseInt( temp /10);
+
+}
+if(sum==number){
+    document.write(number+ "is armstrong number");
+}
+else{
+
+}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
