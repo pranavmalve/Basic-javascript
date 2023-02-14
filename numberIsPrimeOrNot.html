@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //prime number means positive num which is divisible by itself or 1.
+// "/" returns quotient     "%" returns remainder
+        var number = prompt("Enter a number:");
+        if(number==1){
+            console.log("1 is neither nor composite");
+        }
+        else if(number < 1){
+            console.log(number+" is not primenumber")
+
+        }
+        else{
+            for(i = 2;i<number;i++){
+                if(number%i==0){
+                    var res = number +" is not a prime number";
+                    break;
+
+                }
+                else{
+                    var res =number + "is prime number";
+                }
+            }
+            console.log(res);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
